@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ecf0f1"
     android:orientation="vertical"
-    tools:context="com.example.calculator.MainActivity">
+    tools:context="com.example.game.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,21 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/display"
+            android:id="@+id/display_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecf0f1"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/display_answer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ecf0f1"
@@ -156,12 +170,22 @@
             android:textSize="40sp" />
 
         <Button
+            android:id="@+id/button_less"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:text="-"
+            android:textColor="#ecf0f1"
+            android:textSize="40sp" />
+
+        <Button
             android:id="@+id/buttonenter"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="0.25"
-            android:text="¡Prueba!"
+            android:text="Prueba!"
             android:textColor="#ecf0f1"
             android:textSize="40sp" />
 
